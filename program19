@@ -1,0 +1,36 @@
+# Create a dictionary with key-value pairs
+my_dict = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}
+
+# Print the dictionary
+print("My dictionary:", my_dict)
+
+# Access a value using a key
+print("The value of the 'name' key is:", my_dict["name"])
+
+# Change a value using a key
+my_dict["age"] = 31
+print("My updated dictionary:", my_dict)
+
+# Add a new key-value pair to the dictionary
+my_dict["gender"] = "Male"
+print("My dictionary with a new key-value pair:", my_dict)
+
+# Iterate over the keys of the dictionary
+for key in my_dict.keys():
+    print("Key:", key)
+
+# Iterate over the values of the dictionary
+for value in my_dict.values():
+    print("Value:", value)
+
+# Iterate over the key-value pairs of the dictionary
+for key, value in my_dict.items():
+    print("Key:", key, "| Value:", value)
+
+# Filter the dictionary based on a condition
+filtered_dict = {key: value for key, value in my_dict.items() if value == "Male"}
+print("My filtered dictionary:", filtered_dict)
